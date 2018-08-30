@@ -1,0 +1,17 @@
+ua\ndvps\controller\Controller.class
+ua\ndvps\javaClass\PgzWGS84.class
+ua\ndvps\javaClass\OgzWGS84.class
+ua\ndvps\controller\controllerAbout.class
+ua\ndvps\controller\controllerPgzWGS84.class
+ua\ndvps\controller\controllerOgzWGS84.class
+ua\ndvps\controller\controllerConvertWGS84toCK42.class
+ua\ndvps\controller\controllerConvertCK42toWGS84.class
+ua\ndvps\controller\controllerPgzCK42.class
+ua\ndvps\javaClass\PushButton.class
+ua\ndvps\controller\ControllerOgzCK42.class
+ua\ndvps\javaClass\RadToDMS.class
+ua\ndvps\javaClass\OgzCK42.class
+ua\ndvps\javaClass\Ck42ToWgs84Converter.class
+ua\ndvps\javaClass\Clear.class
+ua\ndvps\javaClass\PgzCK42.class
+ua\ndvps\Main.class

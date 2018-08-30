@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="10" maxHeight="427.0" maxWidth="463.0" minHeight="427.0" minWidth="463.0" prefHeight="427.0" prefWidth="463.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.ndvps.controller.Controller">
+    <columnConstraints>
+        <ColumnConstraints minWidth="-Infinity" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane focusTraversable="true" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="453.0">
+            <children>
+                <TextArea id="TextArea1" fx:id="ta" accessibleRole="PAGE_ITEM" editable="false" layoutX="10.0" layoutY="213.0" prefHeight="180.0" prefWidth="434.0" text="ПРЯМА ГЕОДЕЗИЧНА ЗАДАЧА заключається в тому, що по відомим координатам однієї точки розраховується координати другої точки, для чого необхідно знати довжину лінії між цими точками та дирекційний кут цієї лініїОБЕРНЕНА ГЕОДЕЗИЧНА ЗАДАЧА заключається в тому, що по відомим координатам двох точок розраховується довжина лінії між цими точками та дирекційний кут цієї лінії" wrapText="true" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+               <font>
+                  <Font size="13.0" />
+               </font></TextArea>
+                <Separator layoutX="-6.0" layoutY="198.0" prefHeight="4.0" prefWidth="466.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                <MenuBar cache="true" layoutX="-5.0" layoutY="-4.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.91" prefHeight="34.0" prefWidth="485.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="-4.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Файл">
+                            <items>
+                                <MenuItem fx:id="menu_Exit" mnemonicParsing="false" onAction="#onClick_menuExit" text="Вийти" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Вікно">
+                            <items>
+                                <RadioMenuItem fx:id="MenuSvitlaTema" onAction="#Tema" onMenuValidation="#Tema" selected="true" text="Світла тема">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="group" />
+                                    </toggleGroup></RadioMenuItem>
+                                <RadioMenuItem fx:id="MenuTemnaTema" disable="true" onAction="#Tema" onMenuValidation="#Tema" text="Темна тема" toggleGroup="$group" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Допомога">
+                            <items>
+                                <MenuItem fx:id="MenuDovidka" mnemonicParsing="false" onAction="#onClick_menuDovidka" text="Довідка" />
+                                <MenuItem fx:id="menuAbaout" mnemonicParsing="false" onAction="#onClick_menuAbaout" text="Про програму" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <TabPane layoutY="30.0" prefHeight="170.0" prefWidth="453.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="217.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                    <tabs>
+                        <Tab text="СК-42">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="111.0" prefWidth="453.0">
+                                    <children>
+                                        <Button fx:id="btno" defaultButton="true" layoutX="70.0" layoutY="75.0" mnemonicParsing="false" onAction="#onClick_btno" prefHeight="40.0" prefWidth="317.0" text="Обернена  геодезична  задача" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="75.0">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="btnp" defaultButton="true" layoutX="70.0" layoutY="22.0" mnemonicParsing="false" onAction="#onClick_btnp" prefHeight="40.0" prefWidth="317.0" text="Пряма  геодезична задача" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="22.0">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                           <effect>
+                              <DropShadow />
+                           </effect></AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="WGS-84">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="453.0">
+                                    <children>
+                                        <Button fx:id="btnp84" defaultButton="true" layoutX="72.0" layoutY="21.0" mnemonicParsing="false" onAction="#onClick_btnp84" prefHeight="40.0" prefWidth="317.0" text="Пряма  геодезична задача" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="22.0">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="btno84" defaultButton="true" layoutX="74.0" layoutY="73.0" mnemonicParsing="false" onAction="#onClick_btno84" prefHeight="40.0" prefWidth="314.0" text="Обернена  геодезична  задача" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="75.0">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                           <effect>
+                              <DropShadow />
+                           </effect></AnchorPane>
+                            </content>
+                        </Tab>
+                  <Tab text="Конвертор">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="453.0">
+                           <children>
+                              <Button fx:id="btnCKtoWGS" defaultButton="true" layoutX="72.0" layoutY="21.0" mnemonicParsing="false" onAction="#onClick_btnCKtoWGS" prefHeight="40.0" prefWidth="317.0" text="СК-42 в WGS-84" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="22.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnWGStoCK" defaultButton="true" layoutX="74.0" layoutY="73.0" mnemonicParsing="false" onAction="#onClick_WGStoCK" prefHeight="40.0" prefWidth="314.0" text="WGS-84 в СК-42" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="75.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+            <GridPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </GridPane.margin>
+        </AnchorPane>
+    </children>
+</GridPane>

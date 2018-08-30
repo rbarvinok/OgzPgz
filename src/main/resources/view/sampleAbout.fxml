@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" onMouseDragOver="#OnClick_btnAboutExit" prefHeight="307.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.ndvps.controller.ControllerAbout">
+   <children>
+      <ImageView fitHeight="307.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dnvc.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <Label contentDisplay="CENTER" graphicTextGap="10.0" layoutX="40.0" layoutY="69.0" mouseTransparent="true" prefHeight="53.0" prefWidth="342.0" text="ГЕОДЕЗИЧНІ ЗАДАЧІ" textAlignment="CENTER" textFill="#f7fcf9" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Verdana Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.51" />
+         </effect>
+      </Label>
+      <Button fx:id="exitAbout" cacheShape="false" cancelButton="true" centerShape="false" contentDisplay="CENTER" defaultButton="true" layoutX="337.0" layoutY="268.0" mnemonicParsing="false" onAction="#OnClick_btnAboutExit" opacity="0.91" prefHeight="25.0" prefWidth="49.0" scaleShape="false" text="OK" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#0b6ccd" offsetX="2.0" spread="0.19" />
+         </effect>
+      </Button>
+      <Label layoutX="4.0" layoutY="154.0" prefHeight="96.0" prefWidth="393.0" text="Державний науково-дослідний інститут випробувань і сертифікації озброєння та військової техніки" textAlignment="CENTER" textFill="#fcfcfc" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="24.0" layoutY="271.0" text="2018 рік" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="32.0" layoutY="40.0" prefHeight="38.0" prefWidth="359.0" text="ПРЯМА ТА ОБЕРНЕНА" textAlignment="CENTER" textFill="#f5fcf7" wrapText="true">
+         <font>
+            <Font name="Verdana Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.51" />
+         </effect>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
