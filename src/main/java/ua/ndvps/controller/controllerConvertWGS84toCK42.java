@@ -55,7 +55,8 @@ public class ControllerConvertWGS84toCK42 {
             Tx.setText(Double.toString(blHtoXYH.getGK_x()));
             Ty.setText(Double.toString(blHtoXYH.getGK_y()));
             ThCK42.setText(Double.toString(wgs84toCk42.getAltitude42()));
-            Tn.setText(Double.toString(Math.rint(blHtoXYH.getN())));
+            //Tn.setText(Double.toString(Math.rint(blHtoXYH.getN())));
+            Tn.setText(String.valueOf((int) (Math.rint(blHtoXYH.getN()))));
 
         } catch (NumberFormatException e) {
             e.printStackTrace();
