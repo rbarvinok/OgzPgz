@@ -81,8 +81,8 @@ public class ConverterCoordinates {
         Double B, L, M, N;
 
 
-        B = Bd * Pi / 180;
-        L = Ld * Pi / 180;
+        B = Bd * Math.PI / 180;
+        L = Ld * Math.PI / 180;
         M = a * (1 - e2) / Math.pow((1 - e2 * Math.pow(Math.sin(B), 2)), 1.5);
         N = a * Math.pow((1 - e2 * Math.pow(Math.sin(B), 2)), -0.5);
         return ro / (M + H) * (N / a * e2 * Math.sin(B) * Math.cos(B) * da + ((N * N) / (a * a) + 1) * N * Math.sin(B) * Math.cos(B) * de2 / 2 -

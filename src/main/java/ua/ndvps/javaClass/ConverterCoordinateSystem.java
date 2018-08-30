@@ -61,11 +61,13 @@ public class ConverterCoordinateSystem {
 
 
     public Double getGK_x() {
-        return Math.rint(GK_x*100)/100;
+        return Math.rint(GK_x * 100) / 100;
     }
+
     public Double getGK_y() {
-        return Math.rint(GK_y*100)/100;
+        return Math.rint(GK_y * 100) / 100;
     }
+
     public Double getN() {
         return n;
     }
@@ -73,7 +75,7 @@ public class ConverterCoordinateSystem {
     public void BLHtoGK(double latitude, double longitude, double altitude) {
         calculateGK_x(latitude, longitude, altitude);
         calculateGK_y(latitude, longitude, altitude);
-        calculateN(latitude);
+        calculateN(longitude);
     }
 
     private void calculateGK_x(double B, double L, double h) {
@@ -86,8 +88,6 @@ public class ConverterCoordinateSystem {
     }
 
     private void calculateGK_y(double B, double L, double h) {
-
-
         double l;
         l = (((L * 180) / Math.PI) - (3 + (6 * (n - 1)))) / 57.29577951;
         GK_y = (5 + 10 * n) * 100000 + l * Math.cos(B) * (6378245 + 21346.1415 * Math.pow(Math.sin(B), 2) + 107.1590 * Math.pow(Math.sin(B), 4) +
@@ -99,7 +99,6 @@ public class ConverterCoordinateSystem {
     private void calculateN(double L) {//номер шестиградусной зоны в проекции Гаусса-Крюгера
         n = Math.floor((6 + (L * 180 / Math.PI)) / 6);
     }
-
 
 
 }
