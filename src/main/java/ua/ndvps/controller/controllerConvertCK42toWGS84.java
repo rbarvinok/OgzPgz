@@ -26,7 +26,7 @@ public class ControllerConvertCK42toWGS84 {
     PushButton pb = new PushButton();
 
     public void onClick_btnx1(ActionEvent actionEvent) {
-        Clear.clear(Tx, Ty);
+        Clear.clear(Tx, Ty, ThCK42);
     }
 
     public void onClick_btnOk(ActionEvent actionEvent) {
@@ -40,8 +40,8 @@ public class ControllerConvertCK42toWGS84 {
             coordinateSystem.GKtoBLh(x1, y1, h1);
             ConverterCoordinates ck42towgs84 = new ConverterCoordinates();
             ck42towgs84.Ck42ToWgs84Converter(coordinateSystem.getLatitude42(), coordinateSystem.getLongitude42(), coordinateSystem.getAltitude42());
-            RadToDMS radToDMSLat =new RadToDMS(ck42towgs84.getLatitude84());
-            RadToDMS radToDMSLon =new RadToDMS(ck42towgs84.getLongitude84());
+            RadToDMS radToDMSLat = new RadToDMS(ck42towgs84.getLatitude84());
+            RadToDMS radToDMSLon = new RadToDMS(ck42towgs84.getLongitude84());
 
             Tx2d.setText(String.valueOf((int) (radToDMSLat.getDegrees())));
             Tx2m.setText(String.valueOf((int) (radToDMSLat.getMinut())));
@@ -55,9 +55,6 @@ public class ControllerConvertCK42toWGS84 {
             //e.printStackTrace();
             pb.alert();
         }
-
-
-
 
 
     }

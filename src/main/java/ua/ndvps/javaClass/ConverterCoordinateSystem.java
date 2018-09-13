@@ -79,7 +79,7 @@ public class ConverterCoordinateSystem {
     }
 
     private void calculateGK_x(double B, double L, double h) {
-        double l = (((L * 180) / Math.PI) - (3 + (6 * (n - 1)))) / 57.29577951;
+        double l = (((L * 180) / Math.PI) - (3 + 6 * (n - 1))) / 57.29577951;
         GK_x = (6367558.4968 * B) - Math.sin(2 * B) * (16002.8900 + 66.9607 * Math.pow(Math.sin(B), 2) + 0.3515 * Math.pow(Math.sin(B), 4) -  // (6367558.4968 * B) - 2 * Math.Sin(B) *
                 Math.pow(l, 2) * (1594561.25 + 5336.535 * Math.pow(Math.sin(B), 2) + 26.790 * Math.pow(Math.sin(B), 4) + 0.149 * Math.pow(Math.sin(B), 6) +
                         Math.pow(l, 2) * (672483.4 - 811219.9 * Math.pow(Math.sin(B), 2) + 5420.0 * Math.pow(Math.sin(B), 4) - 10.6 * Math.pow(Math.sin(B), 6) +
@@ -87,7 +87,7 @@ public class ConverterCoordinateSystem {
                                         Math.pow(l, 2) * (109500 - 574700 * Math.pow(Math.sin(B), 2) + 863700 * Math.pow(Math.sin(B), 4) - 398600 * Math.pow(Math.sin(B), 6))))));
     }
 
-    private void calculateGK_y(double B, double L, double h) {
+    private void calculateGK_y(double B, double L, double H) {
         double l;
         l = (((L * 180) / Math.PI) - (3 + (6 * (n - 1)))) / 57.29577951;
         GK_y = (5 + 10 * n) * 100000 + l * Math.cos(B) * (6378245 + 21346.1415 * Math.pow(Math.sin(B), 2) + 107.1590 * Math.pow(Math.sin(B), 4) +

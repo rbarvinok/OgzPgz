@@ -48,7 +48,7 @@ public class ConverterCoordinates {
     }
 
     public double getAltitude84() {
-        return Math.rint((altitude) * 1000) / 1000;
+        return Math.rint((altitude) * 100) / 1000;
     }
 
 
@@ -61,8 +61,9 @@ public class ConverterCoordinates {
     }
 
     public double getAltitude42() {
-        return Math.rint((altitude) * 1000) / 1000;
+        return Math.rint((altitude) * 100) / 1000;
     }
+
 
     public void Ck42ToWgs84Converter(double Bd, double Ld, double H) {
 
@@ -77,12 +78,17 @@ public class ConverterCoordinates {
         longitude = Ld - dL(Bd, Ld, H) / 3600;
         altitude = H - dH(Bd, Ld, H);
     }
+
     private Double dB(Double Bd, Double Ld, Double H) {
         Double B, L, M, N;
 
 
-        B = Bd * Math.PI / 180;
-        L = Ld * Math.PI / 180;
+        B = Bd;
+        L = Ld;
+//        B = Bd * Pi / 180;
+//        L = Ld * Pi/ 180;
+
+
         M = a * (1 - e2) / Math.pow((1 - e2 * Math.pow(Math.sin(B), 2)), 1.5);
         N = a * Math.pow((1 - e2 * Math.pow(Math.sin(B), 2)), -0.5);
         return ro / (M + H) * (N / a * e2 * Math.sin(B) * Math.cos(B) * da + ((N * N) / (a * a) + 1) * N * Math.sin(B) * Math.cos(B) * de2 / 2 -
@@ -90,14 +96,18 @@ public class ConverterCoordinates {
                 wx * Math.sin(L) * (1 + e2 * Math.cos(2 * B)) +
                 wy * Math.cos(L) * (1 + e2 * Math.cos(2 * B)) -
                 ro * ms * e2 * Math.sin(B) * Math.cos(B);
-
     }
 
     private Double dL(Double Bd, Double Ld, Double H) {
         Double B, L, N;
 
-        B = Bd * Pi / 180;
-        L = Ld * Pi / 180;
+//        B = Bd * Pi / 180;
+//        L = Ld * Pi / 180;
+
+        B = Bd;
+        L = Ld;
+
+
         N = a * Math.sqrt((1 - e2 * Math.pow(Math.sin(B), 2)));
         return ro / ((N + H) * Math.cos(B)) * (-dx * Math.sin(L) + dy * Math.cos(L)) +
                 Math.tan(B) * (1 - e2) * (wx * Math.cos(L) + wy * Math.sin(L)) - wz;

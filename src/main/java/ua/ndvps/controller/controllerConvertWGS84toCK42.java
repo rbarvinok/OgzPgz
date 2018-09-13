@@ -29,7 +29,7 @@ public class ControllerConvertWGS84toCK42 {
     PushButton pb = new PushButton();
 
     public void onClick_btnx1(ActionEvent actionEvent) {
-        Clear.clear(Txd, Txm, Txs, Tyd, Tym, Tys);
+        Clear.clear(Txd, Txm, Txs, Tyd, Tym, Tys, ThWGS84);
     }
 
     public void onClick_btnOk(ActionEvent actionEvent) {
@@ -45,13 +45,16 @@ public class ControllerConvertWGS84toCK42 {
 
             Double latitude = Math.toRadians(b1d + b1m / 60 + b1s / 3600);
             Double longitude = Math.toRadians(l1d + l1m / 60 + l1s / 3600);
+
+
+
             Double altitude = Double.parseDouble(ThWGS84.getText().replace(",", "."));
 
             ConverterCoordinates wgs84toCk42 = new ConverterCoordinates();
             wgs84toCk42.Wgs84ToCk42Converter(latitude, longitude, altitude);
 
             ConverterCoordinateSystem blHtoXYH = new ConverterCoordinateSystem();
-            blHtoXYH.BLHtoGK(wgs84toCk42.getLatitude84(),wgs84toCk42.getLongitude42(),wgs84toCk42.getAltitude42());
+            blHtoXYH.BLHtoGK(wgs84toCk42.getLatitude42(), wgs84toCk42.getLongitude42(), wgs84toCk42.getAltitude42());
             Tx.setText(Double.toString(blHtoXYH.getGK_x()));
             Ty.setText(Double.toString(blHtoXYH.getGK_y()));
             ThCK42.setText(Double.toString(wgs84toCk42.getAltitude42()));

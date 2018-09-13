@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="30/08/2018">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/ndvps/controller/controllerConvertCK42toWGS84.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/ndvps/controller/controllerConvertCK42toWGS84.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/ndvps/controller/controllerConvertWGS84toCK42.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/ndvps/controller/controllerConvertWGS84toCK42.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinateSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinateSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/sampleConvertCK42toWGS84.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/sampleConvertCK42toWGS84.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/ndvps/controller/controllerConvertWGS84toCK42.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/ndvps/controller/controllerConvertWGS84toCK42.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/ndvps/controller/controllerConvertCK42toWGS84.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/ndvps/controller/controllerConvertCK42toWGS84.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/ndvps/javaClass/Clear.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/ndvps/javaClass/Clear.class" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,39 +65,40 @@
     <session id="-1537658887">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.121" value="1" />
           <entry key="project.open.time.197" value="1" />
           <entry key="project.open.time.292" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.89" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="fxml" value="3" />
-          <entry key="java" value="24" />
+          <entry key="java" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="24" />
+          <entry key="JAVA" value="25" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1143" />
+          <entry key="java" value="1162" />
           <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1143" />
+          <entry key="JAVA" value="1162" />
           <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
@@ -145,6 +147,38 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1438891866">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="fxml" value="1" />
+          <entry key="java" value="1" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="103" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="103" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
@@ -154,17 +188,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinateSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="265">
+              <caret line="89" column="62" lean-forward="true" selection-start-line="89" selection-start-column="62" selection-end-line="89" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-194">
-              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+            <state relative-caret-position="253">
+              <caret line="88" column="25" lean-forward="true" selection-start-line="87" selection-start-column="8" selection-end-line="88" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -172,9 +206,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerConvertWGS84toCK42.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="476">
+              <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#onClick_dov#0;class#ControllerConvertWGS84toCK42#0" />
                 <element signature="method#onClick_back#0;class#ControllerConvertWGS84toCK42#0" />
               </folding>
@@ -182,16 +217,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/view/sampleConvertCK42toWGS84.fxml">
-          <provider editor-type-id="text-editor" />
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerConvertCK42toWGS84.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
+            <state relative-caret-position="306">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
@@ -212,6 +241,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -244,12 +274,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/XYHtoBLHtoXYH.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/controller/controllerConvertCK42toWGS84.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/controller/СontrollerConvertCK42toWGS84.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerConvertWGS84toCK42.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/Clear.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerConvertCK42toWGS84.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinateSystem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinates.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/sampleConvertCK42toWGS84.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinateSystem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerConvertWGS84toCK42.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinates.java" />
       </list>
     </option>
   </component>
@@ -289,10 +319,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="877" />
-    <option name="y" value="4" />
-    <option name="width" value="1043" />
-    <option name="height" value="1100" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -303,6 +332,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -373,7 +403,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
@@ -390,12 +419,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535313638887" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -524,7 +553,10 @@
       <workItem from="1535542092809" duration="3371000" />
       <workItem from="1535623690340" duration="4424000" />
       <workItem from="1535656307420" duration="576000" />
-      <workItem from="1535657101014" duration="2863000" />
+      <workItem from="1535657101014" duration="2975000" />
+      <workItem from="1536830367660" duration="614000" />
+      <workItem from="1536834757484" duration="6164000" />
+      <workItem from="1536858027140" duration="2465000" />
     </task>
     <task id="LOCAL-00001" summary="30/08/2018">
       <created>1535657379884</created>
@@ -540,17 +572,24 @@
       <option name="project" value="LOCAL" />
       <updated>1535658251530</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="30/08/2018">
+      <created>1535660099401</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1535660099401</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65803000" />
+    <option name="totallyTimeSpent" value="75158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3665208" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -559,15 +598,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32934782" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286334" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32858709" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -579,6 +618,36 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3665208" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32934782" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33187294" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32858709" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -587,7 +656,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
@@ -603,12 +671,10 @@
     <entry file="file://$PROJECT_DIR$/src/sample/Main1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/sampleOgzCK42.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/samplePgzWGS84.fxml" />
-    <entry file="jar://$PROJECT_DIR$/../../ProgramFiles/jdk1.8.0_172/src.zip!/java/awt/geom/Point2D.java" />
-    <entry file="jar://$PROJECT_DIR$/../../ProgramFiles/jdk1.8.0_172/javafx-src.zip!/javafx/geometry/Point3D.java" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/jdk1.8.0_172/src.zip!/java/awt/geom/Point2D.java" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/jdk1.8.0_172/javafx-src.zip!/javafx/geometry/Point3D.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerAbout.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/controller/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/PushButton.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerPgzCK42.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerOgzWGS84.java" />
@@ -649,41 +715,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerConvertCK42toWGS84.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/sampleConvertCK42toWGS84.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="272">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinates.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/sample.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerConvertCK42toWGS84.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-194">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        <state relative-caret-position="306">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinateSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        <state relative-caret-position="265">
+          <caret line="89" column="62" lean-forward="true" selection-start-line="89" selection-start-column="62" selection-end-line="89" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/controller/ControllerConvertWGS84toCK42.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="476">
+          <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onClick_dov#0;class#ControllerConvertWGS84toCK42#0" />
             <element signature="method#onClick_back#0;class#ControllerConvertWGS84toCK42#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/sampleConvertCK42toWGS84.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/ndvps/javaClass/ConverterCoordinates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="88" column="25" lean-forward="true" selection-start-line="87" selection-start-column="8" selection-end-line="88" selection-end-column="25" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
